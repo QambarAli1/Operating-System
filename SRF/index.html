@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SRTF Scheduling Algorithm</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Shortest Remaining Time First (SRTF) Algorithm</h1>
+    
+    <h3>Input Process Data</h3>
+    <form id="inputForm">
+        <div>
+            <label for="processCount">Number of Processes:</label>
+            <input type="number" id="processCount" min="1" value="3">
+        </div>
+        <div id="processInputs">
+            <!-- Input fields will be dynamically added here -->
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+
+    <h3>Output Schedule</h3>
+    <table id="outputTable">
+        <thead>
+            <tr>
+                <th>Process</th>
+                <th>Arrival Time</th>
+                <th>Execution Time</th>
+                <th>Start Time</th>
+                <th>Wait Time</th>
+                <th>Turnaround Time</th>
+                <th>Finish Time</th>
+                <th>Utilization (%)</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Results will be dynamically added here -->
+        </tbody>
+    </table>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="./app.js"></script>
+</body>
+</html>
